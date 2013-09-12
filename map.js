@@ -8,11 +8,11 @@ $(document).ready(function() {
 	  
 	// Creating an object literal containing the properties we want to pass to the map  
 	var options = {  
-		zoom: 13, // This number can be set to define the initial zoom level of the map
+		zoom: 13, // Intial map zoom level
 		center: latlng,
-		mapTypeId: google.maps.MapTypeId.ROADMAP // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN
-		
-	};  
+		mapTypeId: google.maps.MapTypeId.ROADMAP // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN	
+	};
+	  
 	// Calling the constructor, thereby initializing the map  
 	var map = new google.maps.Map(document.getElementById('map-canvas'), options);  
 	
@@ -357,5 +357,4 @@ $(document).ready(function() {
 		icon: image_homes_c // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
 	});	
 
-	
 });
