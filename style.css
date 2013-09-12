@@ -20,37 +20,21 @@ body {
 	overflow: hidden;
 }
 
-nav {
+/*** Typography ***/
 
+h1, h2, h3 { font-family: 'Open Sans Condensed', sans-serif;}
+h1 { font-size: 2.2em; padding: 16px 0 16px 16px; display: block; }
+h2 { font-size: 1.6em; padding: 0 0 2px 0; }
+a { text-decoration: none; color: inherit; }
+p { font-size: 0.8em; }
+address { font-size: .7em; }
+
+/*** Block Elements ***/
+nav {
 	background-color: #e6e1d5;
 	float: left;
 	height: 100%;
 	overflow-y: scroll;
-}
-
-#map-canvas {
-	height: 100%;
-}
-
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-h1, h2, h3 { font-family: 'Open Sans Condensed', sans-serif;}
-
-h1 { font-size: 2.2em; padding: 16px 0 16px 16px; display: block; }
-h2 { font-size: 1.6em; padding: 0 0 2px 0; }
-
-p {
-	font-size: 0.8em;
-
-}
-
-address {
-	font-size: .7em;
-
 }
 
 .place {
@@ -68,177 +52,43 @@ address {
 	padding-bottom: 24px;
 }
 
-.work {	
-	background-color: #2ecc71;
-}
+.work {	background-color: #2ecc71; }
+.eat { background-color: #f7ce2a; }
+.interest { background-color: #ea6455; }
+.homes { background-color: #95a5a6; }
 
-.eat {
-	background-color: #f7ce2a;
-}
-
-.interest {
-	background-color: #ea6455;
-}
-
-.homes {
-	background-color: #95a5a6;
-}
-
-.work h2.a:before{
-	content: url(circle-work-a.png);
+.work h2:before, .eat h2:before, .interest h2:before, .homes h2:before {
 	display: block;
 	float: left;
 	margin: 2px 8px 0 0;
 }
 
-.work h2.b:before{
-	content: url(circle-work-b.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
+/* Work H2 Icons */
+.work h2.a:before { content: url(circle-work-a.png); }
+.work h2.b:before { content: url(circle-work-b.png); }
+.work h2.c:before { content: url(circle-work-c.png); }
+.work h2.d:before { content: url(circle-work-d.png); }
 
-.work h2.c:before{
-	content: url(circle-work-c.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
+/* Eat H2 Icons */
+.eat h2.a:before { content: url(circle-eat-a.png); }
+.eat h2.b:before { content: url(circle-eat-b.png); }
+.eat h2.c:before { content: url(circle-eat-c.png); }
+.eat h2.d:before { content: url(circle-eat-d.png); }
+.eat h2.e:before { content: url(circle-eat-e.png); }
+.eat h2.f:before { content: url(circle-eat-f.png); }
+.eat h2.g:before { content: url(circle-eat-g.png); }
+.eat h2.h:before { content: url(circle-eat-h.png); }
 
-.work h2.d:before{
-	content: url(circle-work-d.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
+/* Interest H2 Icons*/
+.interest h2.a:before { content: url(circle-interest-a.png); }
+.interest h2.b:before { content: url(circle-interest-b.png); }
+.interest h2.c:before { content: url(circle-interest-c.png); }
+.interest h2.d:before { content: url(circle-interest-d.png); }
+.interest h2.e:before { content: url(circle-interest-e.png); }
+.interest h2.f:before { content: url(circle-interest-f.png); }
+.interest h2.g:before { content: url(circle-interest-g.png); }
 
-/* Eat */
-
-.eat h2.a:before{
-	content: url(circle-eat-a.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.eat h2.b:before{
-	content: url(circle-eat-b.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.eat h2.c:before{
-	content: url(circle-eat-c.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.eat h2.d:before{
-	content: url(circle-eat-d.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.eat h2.e:before{
-	content: url(circle-eat-e.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.eat h2.f:before{
-	content: url(circle-eat-f.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.eat h2.g:before{
-	content: url(circle-eat-g.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.eat h2.h:before{
-	content: url(circle-eat-h.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-/* Play */
-
-.interest h2.a:before{
-	content: url(circle-interest-a.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.interest h2.b:before{
-	content: url(circle-interest-b.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.interest h2.c:before{
-	content: url(circle-interest-c.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.interest h2.d:before{
-	content: url(circle-interest-d.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-.interest h2.e:before{
-	content: url(circle-interest-e.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.interest h2.f:before{
-	content: url(circle-interest-f.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.interest h2.g:before{
-	content: url(circle-interest-g.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-/* Homes */
-
-.homes h2.a:before{
-	content: url(circle-homes-a.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.homes h2.b:before{
-	content: url(circle-homes-b.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
-
-.homes h2.c:before{
-	content: url(circle-homes-c.png);
-	display: block;
-	float: left;
-	margin: 2px 8px 0 0;
-}
+/* Homes H2 Icons */
+.homes h2.a:before { content: url(circle-homes-a.png); }
+.homes h2.b:before { content: url(circle-homes-b.png); }
+.homes h2.c:before { content: url(circle-homes-c.png); }
