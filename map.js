@@ -11,7 +11,7 @@ $(document).ready(function() {
 	  
 	// Creating an object literal containing the properties we want to pass to the map  
 	var options = {  
-		zoom: 13, // Intial map zoom level
+		zoom: 14, // Intial map zoom level
 		center: latlng,
 		mapTypeId: google.maps.MapTypeId.ROADMAP // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN	
 	};
