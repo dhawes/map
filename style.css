@@ -43,7 +43,7 @@ nav {
 }
 
 .place:visited { }
-.place:hover { background-color: rgba(255,255,255,0.5); cursor: default; } 
+.place:hover { background-color: rgba(255,255,255,0.5); cursor: pointer; } 
 
 
 .work, .eat, .interest, .homes {
