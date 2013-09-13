@@ -1,5 +1,27 @@
 var map;
 var latlng;
+var infowindow;
+var marker0;
+var marker1;
+var marker2;
+var marker3;
+var marker4;
+var marker5;
+var marker6;
+var marker7;
+var marker8;
+var marker9;
+var marker10;
+var marker11;
+var marker12;
+var marker13;
+var marker14;
+var marker15;
+var marker16;
+var marker17;
+var marker18;
+var marker19;
+var marker20;
 
 $(document).ready(function() {
 
@@ -210,28 +232,32 @@ $(document).ready(function() {
 	);
 	
 	// Work Markers
-	var marker0 = new google.maps.Marker({
+	marker0 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.558066, -77.446663),
 		title: 'Dovetail Construction',
 		map: map,		
 		icon: image_work_a  // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
 	});
-	
-	var marker1 = new google.maps.Marker({
+
+    infowindow = new google.maps.InfoWindow({
+      content: ''
+    });
+
+	marker1 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.54698, -77.442458),
 		title: 'Emrick Flats',
 		map: map,		
 		icon: image_work_b
 	});	
 	
-	var marker2 = new google.maps.Marker({
+	marker2 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.525252, -77.441959),
 		title: 'Porter Street',
 		map: map,		
 		icon: image_work_c
 	});	
 	
-	var marker3 = new google.maps.Marker({
+	marker3 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.561755, -77.459673),
 		title: 'Southern Stove Lofts',
 		map: map,		
@@ -239,49 +265,49 @@ $(document).ready(function() {
 	});
 	
 	// Eat Markers
-	var marker4 = new google.maps.Marker({
+	marker4 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.552193, -77.478126),
 		title: 'Bevs Homemade Ice Cream',
 		map: map,		
 		icon: image_eat_a
 	});
 	
-	var marker5 = new google.maps.Marker({
+	marker5 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.551018, -77.448913),
 		title: 'Black Sheep',
 		map: map,		
 		icon: image_eat_b
 	});	
 	
-	var marker6 = new google.maps.Marker({
+	marker6 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.517937, -77.356138),
 		title: 'Country Style Donuts',
 		map: map,		
 		icon: image_eat_c
 	});	
 	
-	var marker7 = new google.maps.Marker({
+	marker7 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.521486, -77.443068),
 		title: 'Croakers Spot',
 		map: map,		
 		icon: image_eat_d
 	});
 	
-	var marker8 = new google.maps.Marker({
+	marker8 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.554449, -77.484516),
 		title: 'Mary Angelas Pizzeria',
 		map: map,		
 		icon: image_eat_e
 	});
 	
-	var marker9 = new google.maps.Marker({
+	marker9 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.528315, -77.420281),
 		title: 'Millies Diner',
 		map: map,		
 		icon: image_eat_f
 	});
 	
-	var marker10 = new google.maps.Marker({
+	marker10 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.533326, -77.427658),
 		title: 'Ronnies Ribs, Wings, and Other Things',
 		map: map,		
@@ -289,49 +315,49 @@ $(document).ready(function() {
 	});
 	
 	// Interests Markers
-	var marker11 = new google.maps.Marker({
+	marker11 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.55013, -77.442421),
 		title: 'Abner Clay Park',
 		map: map,		
 		icon: image_interest_a
 	});
 	
-	var marker12 = new google.maps.Marker({
+	marker12 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.52881, -77.45210),
 		title: 'Belle Isle',
 		map: map,		
 		icon: image_interest_b
 	});	
 	
-	var marker13 = new google.maps.Marker({
+	marker13 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.54461, -77.47305),
 		title: 'Byrd Park',
 		map: map,		
 		icon: image_interest_c
 	});	
 	
-	var marker14 = new google.maps.Marker({
+	marker14 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.547871, -77.465278),
 		title: 'Fritzs Car Care',
 		map: map,		
 		icon: image_interest_d
 	});
 	
-	var marker15 = new google.maps.Marker({
+	marker15 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.561220, -77.486029),
 		title: 'Humphrey Caulder Community Center',
 		map: map,		
 		icon: image_interest_e
 	});	
 	
-	var marker16 = new google.maps.Marker({
+	marker16 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.563020, -77.455169),
 		title: 'SCOR',
 		map: map,		
 		icon: image_interest_f
 	});
 	
-	var marker17 = new google.maps.Marker({
+	marker17 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.546632, -77.442329),
 		title: 'Walter Parks Architects',
 		map: map,		
@@ -339,21 +365,21 @@ $(document).ready(function() {
 	});
 	
 	// Homes Markers
-	var marker18 = new google.maps.Marker({
+	marker18 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.554088, -77.486109),
 		title: 'Bungalow',
 		map: map,		
 		icon: image_homes_a
 	});
 	
-	var marker19 = new google.maps.Marker({
+	marker19 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.556047, -77.484453),
 		title: 'Ellwood',
 		map: map,		
 		icon: image_homes_b
 	});	
 	
-	var marker20 = new google.maps.Marker({
+	marker20 = new google.maps.Marker({
 		position: new google.maps.LatLng(37.546632, -77.442329),
 		title: 'Adams Street Apartment',
 		map: map,		
