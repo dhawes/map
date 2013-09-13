@@ -137,7 +137,7 @@ $(document).ready(function() {
 		new google.maps.Point(19, 48)
 	);
 	
-	var image_interest_c = new google.maps.MarkerImage('img/marker-eat-c.png',
+	var image_interest_c = new google.maps.MarkerImage('img/marker-interest-c.png',
 		// This marker is 38 pixels wide by 53 pixels tall.
 		new google.maps.Size(38, 53),
 		// The origin for this image is 0,0.
