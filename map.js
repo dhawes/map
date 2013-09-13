@@ -1,10 +1,13 @@
+var map;
+var latlng;
+
 $(document).ready(function() {
 
 	//------- Google Maps ---------//
 	google.maps.visualRefresh = true;
 	
 	// Creating a LatLng object containing the coordinate for the center of the map
-	var latlng = new google.maps.LatLng(37.540760, -77.436013);
+	latlng = new google.maps.LatLng(37.540760, -77.436013);
 	  
 	// Creating an object literal containing the properties we want to pass to the map  
 	var options = {  
@@ -14,7 +17,7 @@ $(document).ready(function() {
 	};
 	  
 	// Calling the constructor, thereby initializing the map  
-	var map = new google.maps.Map(document.getElementById('map-canvas'), options);  
+	map = new google.maps.Map(document.getElementById('map-canvas'), options);  
 	
 	// Define Marker properties
 	var image_work_a = new google.maps.MarkerImage('img/marker-work-a.png',
@@ -356,5 +359,4 @@ $(document).ready(function() {
 		map: map,		
 		icon: image_homes_c
 	});	
-
 });
