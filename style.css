@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400);
-
 * {
 	margin: 0;
 	padding: 0;
@@ -43,12 +41,12 @@ nav {
 }
 
 .place:visited { }
-.place:hover { background-color: rgba(255,255,255,0.5); cursor: default; } 
+.place:hover { background-color: rgba(255,255,255,0.5); cursor: pointer; } 
 
 
 .work, .eat, .interest, .homes {
 	display: block;
-	width: 26.0em;
+	width: 24.5em;
 	padding-bottom: 24px;
 }
 

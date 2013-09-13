@@ -1,0 +1,23 @@
+/* TEAM */
+                            
+Contributors: Rob Barrowclift & Dave Hawes
+                              
+Location: VA.
+
+							
+/* THANKS */
+				
+For Joe. I miss you and wish I could share this and all my future projects with you.
+
+- Rob
+
+                            
+/* SITE */
+                     
+Last update: 09/12/2013 
+                            
+Standards: HTML5, CSS3
+                            
+Components: Google Maps API v3, JS
+               
+Software: Coda v2, GitHub, Photoshop

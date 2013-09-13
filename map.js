@@ -33,7 +33,7 @@ $(document).ready(function() {
 	  
 	// Creating an object literal containing the properties we want to pass to the map  
 	var options = {  
-		zoom: 13, // Intial map zoom level
+		zoom: 14, // Intial map zoom level
 		center: latlng,
 		mapTypeId: google.maps.MapTypeId.ROADMAP // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN	
 	};
@@ -159,7 +159,7 @@ $(document).ready(function() {
 		new google.maps.Point(19, 48)
 	);
 	
-	var image_interest_c = new google.maps.MarkerImage('img/marker-eat-c.png',
+	var image_interest_c = new google.maps.MarkerImage('img/marker-interest-c.png',
 		// This marker is 38 pixels wide by 53 pixels tall.
 		new google.maps.Size(38, 53),
 		// The origin for this image is 0,0.
